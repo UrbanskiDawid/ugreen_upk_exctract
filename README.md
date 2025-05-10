@@ -40,6 +40,7 @@ Each UPK file is composed of a sequence of typed objects with the following stru
 
 |Type|	Description
 |----|-----------------
+|sig|	package signature - unknown format
 |ico|	PNG icon image (typically a logo or branding asset).
 |ugb|	Embedded LZMA-compressed .tar archive; may contain scripts, executables, or nested packages.
 |pub|	Base64-encoded public key. The data is Base64-decoded during processing.

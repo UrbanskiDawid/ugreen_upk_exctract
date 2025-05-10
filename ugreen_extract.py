@@ -99,7 +99,9 @@ class UPKExctactor:
         with open(out_fn, 'wb') as out_file:
             out_file.write(self.d[self.i:self.i+_len])
 
-        if _type == 'pub':
+        if _type == 'sig':
+            logging.debug('this is a sig file...')
+        elif _type == 'pub':
             logging.debug('this is a public key...')
             data = self.d[self.i:self.i+_len]
             decoded_data = base64.b64decode(data)
